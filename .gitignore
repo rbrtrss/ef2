@@ -1,0 +1,7 @@
+node_modules
+dist
+src/models/bkp_carrito.json
+src/models/bkp_productos.json
+.env
+coderef2-firebase-adminsdk-c90ug-caafd27bc3.json
+src/models/carrito/DAOs
