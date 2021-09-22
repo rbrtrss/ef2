@@ -1,0 +1,26 @@
+{
+	"pathToFile": "/home/roberto/ef2/src/models/carrito/DAOs/lista_carrito.json",
+	"innerID": 5,
+	"carrito": [
+		{
+			"_id": "1",
+			"timestamp": 1632333980293
+		},
+		{
+			"_id": "2",
+			"timestamp": 1632333993140
+		},
+		{
+			"_id": "3",
+			"timestamp": 1632334176303
+		},
+		{
+			"_id": "4",
+			"timestamp": 1632334444203
+		},
+		{
+			"_id": "5",
+			"timestamp": 1632334456974
+		}
+	]
+}

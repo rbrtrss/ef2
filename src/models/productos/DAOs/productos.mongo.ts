@@ -15,7 +15,7 @@ const atlasURI = `${process.env.MONGO_ATLAS_URI}`;
 //   console.log('Error llamando a la mongodb local');
 // }
 
-const ProductoSchema = new mongoose.Schema<ProductoI>(
+export const ProductoSchema = new mongoose.Schema<ProductoI>(
   {
     nombre: String,
     descripcion: String,

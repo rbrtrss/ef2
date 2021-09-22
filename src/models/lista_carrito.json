@@ -1,5 +1,5 @@
 {
-	"innerId": 6,
+	"innerId": 9,
 	"carrito": [
 		{
 			"id": "2",
@@ -60,6 +60,21 @@
 		{
 			"id": "6",
 			"timestamp": 1632261669815
+		},
+		{
+			"id": "7",
+			"timestamp": 1632261922905,
+			"producto": {}
+		},
+		{
+			"id": "8",
+			"timestamp": 1632265501899,
+			"producto": {}
+		},
+		{
+			"id": "9",
+			"timestamp": 1632265607523,
+			"producto": {}
 		}
 	]
 }

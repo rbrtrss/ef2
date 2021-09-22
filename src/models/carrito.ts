@@ -1,24 +1,24 @@
-import productos from './productos';
+import productos from '../models/productos/productos.factory';
 import fs from 'fs';
 import path from 'path';
 
-interface Producto {
-  id: string;
-  timestamp: number;
-  nombre: string;
-  descripcion: string;
-  codigo: string;
-  foto: string;
-  precio: number;
-  stock: number;
-}
+// interface Producto {
+//   id: string;
+//   timestamp: number;
+//   nombre: string;
+//   descripcion: string;
+//   codigo: string;
+//   foto: string;
+//   precio: number;
+//   stock: number;
+// }
 
 class Carrito {
   innerId: number;
   carrito: {
     id: string;
     timestamp: number;
-    producto: Producto | undefined;
+    producto: any;
   }[];
 
   constructor() {
