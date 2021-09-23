@@ -1,26 +1,20 @@
 {
 	"pathToFile": "/home/roberto/ef2/src/models/carrito/DAOs/lista_carrito.json",
-	"innerID": 5,
+	"innerID": 1,
 	"carrito": [
 		{
 			"_id": "1",
-			"timestamp": 1632333980293
-		},
-		{
-			"_id": "2",
-			"timestamp": 1632333993140
-		},
-		{
-			"_id": "3",
-			"timestamp": 1632334176303
-		},
-		{
-			"_id": "4",
-			"timestamp": 1632334444203
-		},
-		{
-			"_id": "5",
-			"timestamp": 1632334456974
+			"timestamp": 1632400741357,
+			"producto": {
+				"_id": "2",
+				"timestamp": 1632400708169,
+				"nombre": "Pollo",
+				"descripcion": "Un rico pollo asado",
+				"codigo": "Y no se que sea esto",
+				"foto": "https://cdn3.iconfinder.com/data/icons/street-food-and-food-trucker-1/64/fried-chicken-thigh-fast-food-128.png",
+				"precio": "234",
+				"stock": 50
+			}
 		}
 	]
 }

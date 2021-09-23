@@ -5,7 +5,7 @@ import { CarritoSqliteDAO } from './DAOs/carrito.sqlite';
 import { CarritoMySQLDAO } from './DAOs/carrito.mysql';
 import { CarritoFirebaseDAO } from './DAOs/carrito.firebase';
 
-const filepath = './DAOs/lista_carrito.json';
+const filename = `${process.env.FS_CARRITO_FILENAME}`;
 
 const modo = `${process.env.MODO_PERSISTENCIA}`;
 
@@ -13,7 +13,7 @@ export class CarritoFactory {
   static get(modo: string) {
     switch (modo) {
       case 'filesystem':
-        return new CarritoFileSystemDAO(filepath);
+        return new CarritoFileSystemDAO(filename);
 
       case 'mongolocal':
         return new CarritoMongoDAO(false);

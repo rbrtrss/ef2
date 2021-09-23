@@ -1,11 +1,12 @@
 import fs from 'fs';
 import path from 'path';
-import { ProductosFileSystemDAO } from '../../productos/DAOs/productos.fs';
+// import { ProductosFileSystemDAO } from '../../productos/DAOs/productos.fs';
 import { CarritoI } from '../carrito.interface';
+import productos from '../../productos/productos.factory';
 
-const productos = new ProductosFileSystemDAO(
-  `${process.env.FS_PRODUCTOS_FILENAME}`
-);
+// const productos = new ProductosFileSystemDAO(
+//   `${process.env.FS_PRODUCTOS_FILENAME}`
+// );
 
 export class CarritoFileSystemDAO {
   private pathToFile: string;

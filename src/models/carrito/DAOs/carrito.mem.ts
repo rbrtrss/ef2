@@ -1,7 +1,6 @@
-import { ProductosMemoriaDAO } from '../../productos/DAOs/productos.mem';
+// import { ProductosMemoriaDAO } from '../../productos/DAOs/productos.mem';
 import { CarritoI } from '../carrito.interface';
-
-const productos = new ProductosMemoriaDAO();
+import productos from '../../productos/productos.factory';
 
 export class CarritoMemoriaDAO {
   private innerID: number;

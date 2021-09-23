@@ -1,6 +1,8 @@
 import admin from 'firebase-admin';
 import path from 'path';
-import { ProductosFirebaseDAO } from '../../productos/DAOs/productos.firebase';
+// import { ProductosFirebaseDAO } from '../../productos/DAOs/productos.firebase';
+import productos from '../../productos/productos.factory';
+
 // import { NuevoProductoI } from '../productos.interface';
 // import ServiceAccount  from '/home/roberto/ef2/coderef2-firebase-adminsdk-c90ug-caafd27bc3.json';
 
@@ -17,7 +19,7 @@ import { ProductosFirebaseDAO } from '../../productos/DAOs/productos.firebase';
 const db = admin.firestore();
 const carritoDB = db.collection('carrito');
 
-const productos = new ProductosFirebaseDAO();
+// const productos = new ProductosFirebaseDAO();
 
 export class CarritoFirebaseDAO {
   async find(id: string) {

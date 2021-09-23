@@ -5,7 +5,7 @@ import { ProductosSqliteDAO } from './DAOs/productos.sqlite';
 import { ProductosMySQLDAO } from './DAOs/productos.mysql';
 import { ProductosFirebaseDAO } from './DAOs/productos.firebase';
 
-const filepath = './DAOs/lista_productos.json';
+const filename = `${process.env.FS_PRODUCTOS_FILENAME}`;
 
 const modo = `${process.env.MODO_PERSISTENCIA}`;
 
@@ -13,7 +13,7 @@ export class ProductosFactory {
   static get(modo: string) {
     switch (modo) {
       case 'filesystem':
-        return new ProductosFileSystemDAO(filepath);
+        return new ProductosFileSystemDAO(filename);
 
       case 'mongolocal':
         return new ProductosMongoDAO(false);
