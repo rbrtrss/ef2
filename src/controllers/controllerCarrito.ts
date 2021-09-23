@@ -1,9 +1,7 @@
 // import carrito from '../models/carrito';
 import productos from '../models/productos/productos.factory';
 import { Request, Response, NextFunction } from 'express';
-import { CarritoMySQLDAO } from '../models/carrito/DAOs/carrito.mysql';
-
-const carrito = new CarritoMySQLDAO();
+import carrito from '../models/carrito/carrito.factory';
 
 class controlCarrito {
   async productoExiste(req: Request, res: Response, next: NextFunction) {
