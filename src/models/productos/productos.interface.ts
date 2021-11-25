@@ -19,6 +19,7 @@ export interface NuevoProductoI {
 }
 
 export interface ProductoBaseClass {
+  find(id: string): any;
   get(id?: string | undefined): Promise<ProductoI[]>;
   add(data: NuevoProductoI): Promise<ProductoI>;
   update(id: string, dataNuevoProducto: NuevoProductoI): Promise<ProductoI>;
